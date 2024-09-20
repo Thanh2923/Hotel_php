@@ -1,12 +1,10 @@
 <?php     
     
 
-    $sql="Select menu.name_menu as name_menu , sum(quantity) as ctsl ,  sum(sum) as sumprice, min(sum) as minprice, max(sum) as maxprice  ";
+    $sql="Select menu.name_menu as name_menu ,sum(quantity) as ctsl , min(price) as minprice,max(price) as maxprice , sum(price) as sumprice  ";
     $sql.="from hoa_don left join menu on menu.id_menu=hoa_don.id_menu_hd ";
-    $sql.="group by menu.id_menu asc ";
+    $sql.="group by menu.id_menu  asc ";
      $result=pdo_query($sql);
-    
-     var_dump($result);
 
 
 ?>

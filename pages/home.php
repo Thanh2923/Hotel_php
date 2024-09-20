@@ -109,6 +109,8 @@
         </div>
     </div>
 </li>
+    
+
 <?php } ?>
 <main>
     <div class="container dbcl-he">
@@ -144,16 +146,6 @@
                    foreach ($result as $load_rom) {
                     $img_path="./uploads/";
                     extract($load_rom);
-                    
-// Tên sản phẩm chứa dấu +, dấu %, và khoảng trắng
-// $ten_san_pham = "$name_rom";
-
-// // Loại bỏ dấu + và dấu %
-// $ten_san_phama = str_replace(['+', '%'], ' ', $ten_san_pham);
-
-// // Thêm vào dấu - trong khoảng cách
-// $phong = str_replace(' ', '-', $ten_san_phama);
-                    
 
                     $img=$img_path.$image_rom;
                     $tr='    <a class="text-decoration-none" href="index.php?action=ctdatphong&id_rom='.$id_rom.'"><div class="col">
@@ -374,3 +366,4 @@
     </div>
     <div class="dvi" style="width:100%; height:50px;"></div>
 </main>
+

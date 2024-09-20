@@ -36,7 +36,7 @@
             foreach ($load_all_dsphong as $dm_phong) {
                 extract($dm_phong);
                 $suaid_menu="index.php?admin=suaid_menu&id_menu=".$id_menu;
-                $delete_dm="index.php?admin=delete_dm&id_menu=".$id_menu;
+                        $delete_dm="index.php?admin=delete_dm&id_menu=".$id_menu;
                 $tr = ' <tr>
                 <td>'.$id_menu.'</td>
                 <td>'.$name_menu.'</td>
